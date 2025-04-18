@@ -23,7 +23,8 @@
     "cloudfront:update:build:deploy": "npm run cloudfront:setup && npm run cloudfront:build:deploy",
     "cloudfront:update:build:deploy:nc": "npm run cloudfront:setup && npm run cloudfront:build:deploy:nc",
     "serverless:remove": "sls remove",
-    "azure:deploy": "node src/upload.js"
+    "azure:deploy": "node src/upload.js",
+    "azure:deploy2": "./scripts/deploy-web.sh"
   },
 
   "dependencies": {
