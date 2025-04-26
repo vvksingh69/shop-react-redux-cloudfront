@@ -24,7 +24,7 @@
     "cloudfront:update:build:deploy:nc": "npm run cloudfront:setup && npm run cloudfront:build:deploy:nc",
     "serverless:remove": "sls remove",
     "azure:deploy": "node src/upload.js",
-    "azure:deploy2": "./scripts/deploy-web.sh"
+    "azure:deploy2": "powershell -ExecutionPolicy Bypass -File ./scripts/deploy-web.ps1"
   },
 
   "dependencies": {
