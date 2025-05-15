@@ -55,9 +55,9 @@ export function useRemoveProductCache() {
 
 export function useUpsertAvailableProduct() {
   return useMutation((values: AvailableProduct) =>
-    axios.put<AvailableProduct>(`${API_PATHS.bff}/product`, values, {
+    axios.post<AvailableProduct>(`${API_PATHS.bff}/products`, values, {
       headers: {
-        Authorization: `Basic ${localStorage.getItem('authorization_token')}`,
+        'Ocp-Apim-Subscription-Key': import.meta.env.VITE_PRODUCTS_KEY
       },
     })
   );

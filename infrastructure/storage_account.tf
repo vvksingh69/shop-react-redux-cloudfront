@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "front_end_storage_account"{
-    name = "stgsandfrontendnevs001"
+    name = "stgsandfrontendnevks001"
     location = "northeurope"
 
     account_replication_type = "LRS"
