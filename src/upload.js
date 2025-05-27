@@ -6,7 +6,7 @@ const distPath = path.resolve(__dirname, '../dist');
 const container = '`$web';
 
 execSync(
-  `az storage blob upload-batch -s "${distPath}" -d ${container} --account-name stgsandfrontendnevs001`,
+  `az storage blob upload-batch -s "${distPath}" -d ${container} --account-name stgsandfrontendnevks001 --overwrite`,
   {
     stdio: 'inherit',
     shell: 'powershell.exe',
